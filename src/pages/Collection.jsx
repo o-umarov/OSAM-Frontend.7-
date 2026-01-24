@@ -65,7 +65,7 @@ const sortProduct = () => {
 
 useEffect(()=>{
   applyFilter();
-}, [category, subCategory, search, showSearch]);
+}, [category, subCategory, search, showSearch, products]);
 
 useEffect(()=>{
   sortProduct();
@@ -83,13 +83,13 @@ useEffect(()=>{
           <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Men'} onChange={toggleCategory}/> MEN
+              <input className='w-3' type='checkbox' value={'skincare'} onChange={toggleCategory}/> SKINCARE
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Women'} onChange={toggleCategory}/> WOMEN
+              <input className='w-3' type='checkbox' value={'makeup'} onChange={toggleCategory}/> MAKE UP
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Kids'} onChange={toggleCategory}/> KIDS
+              <input className='w-3' type='checkbox' value={'parfume'} onChange={toggleCategory}/> PARFUME
             </p> 
           </div>
         </div>
@@ -98,13 +98,13 @@ useEffect(()=>{
           <p className='mb-3 text-sm font-medium'>TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Topwear'} onChange={toggleSubCategory}/> TOP WEAR
+              <input className='w-3' type='checkbox' value={'face'} onChange={toggleSubCategory}/> FACE USE
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Bottomwear'} onChange={toggleSubCategory}/> BOTTOM WEAR
+              <input className='w-3' type='checkbox' value={'body'} onChange={toggleSubCategory}/> BODY USE
             </p>
             <p className='flex gap-2'>
-              <input className='w-3' type='checkbox' value={'Winterwear'} onChange={toggleSubCategory}/> WINTER WEAR
+              <input className='w-3' type='checkbox' value={'hair'} onChange={toggleSubCategory}/> HAIR && BEARD USE
             </p> 
           </div>
         </div>

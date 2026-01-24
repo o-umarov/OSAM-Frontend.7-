@@ -7,4 +7,5 @@ export default defineConfig({
     react(),        // 🔥 ENG MUHIM
     tailwindcss(),  // Tailwind v4
   ],
+  server: {port: 3003}
 })
